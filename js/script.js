@@ -159,11 +159,13 @@ function printQuote() {
   } else {
   }
   quotesInner += "</p>";
+  // `printColor` - random color generator
   let randomColorNumber = getRandomColor();
   console.log(randomColorNumber);
   document.querySelector("body").style.background = randomColorNumber;
   document.getElementById("quote-box").innerHTML = quotesInner;
 }
+// interval for printQuote function
 setInterval(() => {
   printQuote();
 }, 10000);
